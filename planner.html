@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planner | Blessing Dominic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="index.html">Blessing Dominic</a>
+<nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About me</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</header>
+<main>
+<section class="wrap narrow">
+<h1>Academic planner</h1>
+<p class="lead">Add what you need to do, tick it off when it is done, and delete it when you no longer need it.</p>
+<form id="taskForm" class="row">
+<label for="taskInput" class="sr">New task</label>
+<input id="taskInput" type="text" placeholder="e.g. Finish COS 106 project" autocomplete="off">
+<button class="btn" type="submit">Add task</button>
+</form>
+<p id="taskError" class="error" role="alert"></p>
+<p id="taskCount" class="muted" aria-live="polite"></p>
+<ul id="taskList" class="tasks"></ul>
+</section>
+</main>
+<footer class="site-footer"><p>&copy; 2026 Blessing Dominic. COS 106 Term Project, MIVA Open University.</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
